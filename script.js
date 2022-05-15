@@ -9,7 +9,7 @@ submitForm= ()=>{
         alert("you have successfully signed up");
         signup[0].innerHTML="<h1>Thank You "+firstname.value+"!</h1><br><p>You have successfully signed up</p>";
     }else{
-        alert("password and confirm p doesn't match");
+        alert("Password and Confirm password doesn't match");
     }
 }
 function passwordVisibility(password) {
