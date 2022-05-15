@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-div">
+            <h2>Sign Up </h2><br>
+            <form onsubmit="submitForm();return false">
+                <input id ="firstname"placeholder="First Name" type="text" required>
+                <input placeholder="Last Name"type="text" required>
+                <input placeholder="Username" type="text" required>
+                <input placeholder="Email" type="email" required>
+                <div class="password-div">
+                    <input id="password" placeholder="Password" type="password" minlength="8" required>
+                    <input id="checkbox" type="checkbox" onclick="passwordVisibility('password')">
+                </div>
+                <div class="password-div">
+                    <input id="confirmPassword" placeholder="Confirm Password" type="password" minlength="8" required>
+                    <input id="checkbox" type="checkbox" onclick="passwordVisibility('confirmPassword')">
+                </div>
+                <input type="submit" value="Submit" id="submit-btn">
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
